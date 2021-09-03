@@ -14,7 +14,7 @@
    which becomes the whole DOM. update the object's state, update the DOM, and get on with life.
   
    I really like these libraries and their emphasis on being lean. They each combine really well to create a very simple 
-  UI component system for the browser. I chose the name 'Hybrid' since it sorta combines FP and OOP styles.
+  UI component system for the browser. It sorta combines FP and OOP styles.
 
    Basically everything the DOM is composed of becomes a template string literal, pointing to either a string list 
   of CSS classes or a HTML data attribute which encodes a JS function for style class switching. These are generic 
