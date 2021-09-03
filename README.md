@@ -8,15 +8,15 @@
   + Emotion - minimal CSS in JS util lib
   + Snowpack - HMR and simple dev-server/build
 
-## Purpose // Explanation
+## Purpose & Explanation
 
-    TLDR: take some strings containg some html, put them in an object, and pipe the object into a bigger string 
-    which becomes the whole DOM. update the object's state, update the DOM, and get on with life.
+   TLDR: take some strings containg some html, put them in an object, and pipe the object into a bigger string 
+   which becomes the whole DOM. update the object's state, update the DOM, and get on with life.
   
-    I really like these libraries and their emphasis on being lean. They each combine really well to create a very simple 
+   I really like these libraries and their emphasis on being lean. They each combine really well to create a very simple 
   UI component system for the browser. I chose the name 'Hybrid' since it sorta combines FP and OOP styles.
 
-    Basically everything the DOM is composed of becomes a template string literal, pointing to either a string list 
+   Basically everything the DOM is composed of becomes a template string literal, pointing to either a string list 
   of CSS classes or a HTML data attribute which encodes a JS function for style class switching. These are generic 
   functions abstracted via the Easy Toggle State Library for ceating toggle swtiches/buttons in HTML. In other words, 
   Easy Toggle State makes it so we don't have to write almost any functions related to styles (or none at all if we choose).
@@ -24,14 +24,14 @@
   into the component template. Even if you never use this starter, check out this library as it makes style switching 
   very simple without having to write any JS.
 
-    Reef makes the whole process really simple by providing a suuuupperrr easy way to render these html templates. Reef is
+   Reef makes the whole process really simple by providing a suuuupperrr easy way to render these html templates. Reef is
   my favorite library for rendering UI as that is all it does, and as such it is an order of magnitude smaller than all of its
   peers such as React, or Vue. it provides a simple object, which you can fill with data to pass in props, set and get 
   functions if needed, and a pointer to a HTML template literal, which is what we plop our string of CSS selectors and 
   HTML attributes into. Reef doesn't seem to get alot of attention, but Reef is very much worth looking into if you want a 
   very simple and easy way to render components and manage DOM state.
 
-    On the CSS side of things, EmotionJS provides CSS in JS with the same minimal approach as the last two libraries. We don't 
+   On the CSS side of things, EmotionJS provides CSS in JS with the same minimal approach as the last two libraries. We don't 
   have to do anything fancy except provide a template string containg some style rules, and then call the provided function
   to bind that to a JS variable, which generates a class name in the DOM. This library is super powerful, and lets us 
   do so much in terms of style manipulation, or it can just provide a way to write CSS in a JS component, and generate
@@ -39,13 +39,13 @@
   handy for writing CSS in JS, especially if you want to write CSS directly inside your component script regardless of
   your choice of framework.
 
-    Lastly, Chota provides a super clean (and tiny, one of the smallest) stylesheets with OOCSS (object oriented CSS)
+   Lastly, Chota provides a super clean (and tiny, one of the smallest) stylesheets with OOCSS (object oriented CSS)
   patterns and utilites. In just a few Kb it gives us a responsive grid, styled elements, and root set of CSS variables
   for easy customization and theme switching. The semantic HTML style lets us write class styles that describe the templates 
   look and feel, instead of very specific classes which describe whole components. I write the classes as yet another
   JS string literal and just pass it in locally to the template as one prop via Reef. 
 
-    To sum it up, I use these libraries to leverage the native web stack to create single file UI components. Each component feels 
+   To sum it up, I use these libraries to leverage the native web stack to create single file UI components. Each component feels 
   rather boilerplate-y in terms of its source code, but since i plan to use this system to create a modular component library i 
   don't mind this approach to the front-end. I want to be able to script to together a bunch of modular components, plug in a
   :root for themeing, and then only edit the code for my specific needs, more like a config than a script (after all, most of it 
@@ -54,7 +54,7 @@
   requiring us to change any of our own scripting patterns around it. I'm hoping to use this SFC system to build a SPA, 
   showcasing Reed and the rest of this distro's packages simplicity.
 
-    The use case for this I imagine is something like a replacement for Preact, so any web page that has to be concerned
+   The use case for this I imagine is something like a replacement for Preact, so any web page that has to be concerned
   with state based UI but is not going to get huge in scale. In addition, it gives me an easier way to think about front-end 
   in general, especially organized, object oriented CSS patterns. I want to flesh this out so any time i wanna make a visually 
   expressive UI, I can reach for this component system. Don't get me wrong, for now this is no replacement for Elm, Svelte, 
@@ -70,14 +70,14 @@
 
 ## Shout-out 
 
-    All of the credit goes to the maintainers of these awesome libraries! Make sure to star their projects. 
+   All of the credit goes to the maintainers of these awesome libraries! Make sure to star their projects. 
    Its only because of them that this awesome DX is possible.
 
 ## Get Started
 
-    git clone this repo and yarn install. 
+   git clone this repo and yarn install. 
 
-    run snowpack dev, and then be sure to RTFM's of each package to see exactly how it works !
+   run snowpack dev, and then be sure to RTFM's of each package to see exactly how it works !
 
 
   
