@@ -24,12 +24,16 @@
   into the component template. Even if you never use this starter, check out this library as it makes style switching 
   very simple without having to write any JS.
 
+## Reefjs
+
    Reef makes the whole process really simple by providing a suuuupperrr easy way to render these html templates. Reef is
   my favorite library for rendering UI as that is all it does, and as such it is an order of magnitude smaller than all of its
   peers such as React, or Vue. it provides a simple object, which you can fill with data to pass in props, set and get 
   functions if needed, and a pointer to a HTML template literal, which is what we plop our string of CSS selectors and 
   HTML attributes into. Reef doesn't seem to get alot of attention, but Reef is very much worth looking into if you want a 
   very simple and easy way to render components and manage DOM state.
+
+## Emotionjs
 
    On the CSS side of things, EmotionJS provides CSS in JS with the same minimal approach as the last two libraries. We don't 
   have to do anything fancy except provide a template string containg some style rules, and then call the provided function
@@ -38,21 +42,16 @@
   class names on the fly, which we pass in as a prop to the template. I sound like a broken record, but this library is super
   handy for writing CSS in JS, especially if you want to write CSS directly inside your component script regardless of
   your choice of framework.
+  
+## ChotaCSS
 
    Lastly, Chota provides a super clean (and tiny, one of the smallest) stylesheets with OOCSS (object oriented CSS)
   patterns and utilites. In just a few Kb it gives us a responsive grid, styled elements, and root set of CSS variables
   for easy customization and theme switching. The semantic HTML style lets us write class styles that describe the templates 
   look and feel, instead of very specific classes which describe whole components. I write the classes as yet another
-  JS string literal and just pass it in locally to the template as one prop via Reef. 
-
-   To sum it up, I use these libraries to leverage the native web stack to create single file UI components. Each component feels 
-  rather boilerplate-y in terms of its source code, but since i plan to use this system to create a modular component library i 
-  don't mind this approach to the front-end. I want to be able to script to together a bunch of modular components, plug in a
-  :root for themeing, and then only edit the code for my specific needs, more like a config than a script (after all, most of it 
-  is static mark-up). From there, the idea is we can build everything else the app or web page needs out of vanilla JS 
-  (or vanilla js API's/plugins) if we want, since this system takes care of all our rendering and style logic without 
-  requiring us to change any of our own scripting patterns around it. I'm hoping to use this SFC system to build a SPA, 
-  showcasing Reed and the rest of this distro's packages simplicity.
+  JS string literal and just pass it in locally to the template as one prop via Reef.
+  
+## Use Case
 
    The use case for this I imagine is something like a replacement for Preact, so any web page that has to be concerned
   with state based UI but is not going to get huge in scale. In addition, it gives me an easier way to think about front-end 
