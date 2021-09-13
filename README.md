@@ -15,6 +15,8 @@
   
    I really like these libraries and their emphasis on being lean. They each combine really well to create a very simple 
   UI component system for the browser. It sorta combines FP and OOP styles.
+  
+## Easy Toggle State
 
    Basically everything the DOM is composed of becomes a template string literal, pointing to either a string list 
   of CSS classes or a HTML data attribute which encodes a JS function for style class switching. These are generic 
